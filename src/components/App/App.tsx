@@ -38,9 +38,7 @@ const App = () => {
       />
       {totalVotes !== 0 && (
         <VoteStats
-          good={votes.good}
-          bad={votes.bad}
-          neutral={votes.neutral}
+          votes={votes}
           positiveRate={positiveRate}
           totalVotes={totalVotes}
         />
