@@ -4,7 +4,7 @@ import css from "./App.module.css";
 import type { Votes } from "../../types/votes";
 import type { VoteType } from "../../types/votes";
 import VoteOptions from "../VoteOptions/VoteOptions";
-import VoteStatsProps from "../VoteStats/VoteStats";
+import VoteStats from "../VoteStats/VoteStats";
 import Notification from "../Notification/Notification";
 
 const App = () => {
@@ -37,7 +37,7 @@ const App = () => {
         canReset={totalVotes !== 0}
       />
       {totalVotes !== 0 && (
-        <VoteStatsProps
+        <VoteStats
           votes={votes}
           positiveRate={positiveRate}
           totalVotes={totalVotes}
